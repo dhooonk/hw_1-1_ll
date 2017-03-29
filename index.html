@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>KIM DOE HOON</title>
+    
+    <!---bootstrap 사용하기 위한 코드------->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <!---bootstrap 사용하기 위한 코드 end------->
+ 
+<!--------css -------------------->
+<style>
+ @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+*{
+	font-family: 'Nanum Gothic';
+	margin: 0;
+	padding: 0;
+ }
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.img-circle{
+	height:100%;
+	min-width: 50px;
+	min-height: 50px;
+	max-width:100px;
+	max-height:100px;
+
+	}
+	.img-rounded{
+		width:100%;
+	min-width: 50px;
+	min-height: 50px;
+	max-width:300px;
+	max-height:300px;
+	}
+.navbar{
+		z-index: 100;
+	}
+
+	
+.slide {
+  position: relative;
+  padding: 10vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+	transform-style: inherit;
+}
+.contactslide {
+  position: relative;
+  padding: 10vh 10%;
+  width: 100vw;
+	}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #0F0000;
+}
+
+#title {
+  background-image:url(http://asadal.bloter.net/files/2016/06/naver_campus_hackday_2016.jpg);
+   background-attachment: fixed;
+	
+}
+
+#profile:before {
+  background-color:#ffffff;
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#footprint {
+  background-color:#4BBFC3;
+  background-attachment: fixed;
+}
+#photo :before{
+  background-color:#FFFFFF;
+   background-attachment: fixed;
+	min-height: 900px;
+	  z-index:1;
+}
+#contact{
+  background-color:#FFE077;
+  transform: translateZ(-1px) scale(2);
+}
+
+#footer-copyright {
+  background: #222;
+  color:#CFCFCF;
+	font-size:12px;
+}
+</style>
+<!--------css end-------------------->
+    </head>
+    <body>
+ <!-----------------------navbar----------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container" role="navigation" style="background-color:white">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <p class="navbar-text" href="#">KDH</p>
+    </div>
+        
+        <ul class="nav navbar-nav">
+          <li role="presentation"><a href="#profile">Profile</a></li>
+          <li role="presentation"><a href="footprint">Footprint</a></li>
+          <li role="presentation"><a href="#photo">Photo</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+<!------navbar end-------------------------------------------->
+<div id="title" class="slide header">
+  <h2>김도훈</h2>
+  <br>Kim Doehoon
+</div>
+
+<div id="profile" class="slide">
+  <div class="title">
+    <h1>Profile</h1>
+           <div class="col-xs-6 col-md-6"> 
+        <a href="https://www.facebook.com/doehoon.kim?ref=bookmarks">
+          <img class="img-thumbnail" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/1000718_412564225530010_1032480477_n.jpg?oh=52b1b72cae78817b431b18dde497ea54&oe=596C0D73">
+        </a>
+      </div>
+      <div class="col-xs-6 cold-md-6">
+      <h2> 김도훈 <a href="https://www.facebook.com/doehoon.kim?ref=bookmarks"> <small>facebook</small></a> <a href="https://www.instagram.com/kimdoehoon/"><small>instagram</small></a></h2>
+        1993.10.14        
+        <br>
+      <br>화학이 좋아서 화학과에 진학하였다가 공부를 열심히 한다고 하긴 했는데 대외활동에 빠져 전공학점은...
+      <br>
+      <br>레이더 병으로 군 복무 후 원거리에서 정보를 전하는 전파에 흥미를 느껴 전자공학과를 복수전공하고, 계산을 도와주는 컴퓨터에도 재미붙여 멋사와 함께 컴퓨터를 공부하는 중.
+      먼 훗날 뇌 공학자로 이름날리는 것이 목표이다.
+      <br>
+      <br>여행을 좋아해서 남미와 아프리카를 제외한 대륙에 발을 디뎠고, 피아노를 어렸을 때 부터 배워와 꽤 자신이 있다. 기타는 벚꽃엔딩밖에 치지 못한다. 그래도 작곡경험도 있는 나름 음악인이라고 생각한다. 농구에 고2때부터 환장했으나 그냥 즐기는 수준이고 조주기능사 자격증은 있지만 술자리 허세용으로 주로 사용중.
+      
+  </div>
+</div>
+</div>
+<div id="footprint" class="slide">
+  <div class="title">
+    <div class="col-xs-8 cold-md-6">
+    <h1>Footprint</h1>
+        <br>2009.02~2012.02
+        <br>
+        <br>관양고등학교 졸업
+        <br>
+        <br>2013.02~
+        <br>
+        <br>경희대학교 응용과학대학 / 전자정보대학
+		<br>응용화학 학사 재학중/ 전자전파공학 학사 재학중
+       <br>
+       <br>
+        <br>
+        
+        <div class="profilebold">활동사항</div>
+        <br>(주)마이다스아이티 / 기업정보 리서치 및 엑셀 정리
+        <br>(주)인피니트드림 / 역사문화행사(경복궁) 진행/안내 STAFF 
+        <br>뚜레주르 안양범계직영점 / STAFF
+        <br>
+        <br>응용화학과 과동아리 About C
+        <br>SK에너지 YOUTHLOGGER
+        <br>KT&G 상상Univ. 작곡기초반 상상 K-POP Making 클래스 
+        <br>KT&G 상상Univ. 상상 칵테일 클래스 상상 바텐더 칵테일&플레어(초급) 클래스
+        <br>멋쟁이사자처럼
+        <br>
+        <br>한국소아암재단 학습지원
+        <br>서울시립청소년미디어센터 스스로넷 미디어스쿨 학습지원
+        <br>JTBC-중앙일보 공부의신 프로젝트
+        <br>
+        2016학년도 2학기 경희대학교 외국인학생 도우미
+        <br>2016년 서울대학교병원 WOW 대학생 봉사단
+        <br>2017년 1학기 경희대학교 신입생세미나 멘토
+	  </div>
+        
+      <div class="col-xs-2 cold-md-6">
+  <img src="https://lh6.googleusercontent.com/-vg586ec5nDE/AAAAAAAAAAI/AAAAAAAAABQ/P---96hHkwA/s0-c-k-no-ns/photo.jpg" class="img-circle img-responsive" alt="Placeholder image">
+  <img src="http://data.adic.co.kr/member/logo/200801/skenergy9773428873.jpg" class="img-circle img-responsive" alt="Placeholder image" > 
+  <img src="http://modo.phinf.naver.net/20160115_104/1452829264892ofJUp_JPEG/mosagdHS5O.jpeg?type=f320_320" class="img-circle img-responsive" alt="Placeholder image">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC_%EB%A1%9C%EA%B3%A0.png/270px-%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC_%EB%A1%9C%EA%B3%A0.png" class="img-circle img-responsive" alt="Placeholder image"> 
+  <img src="http://img.etnews.com/cms/uploadfiles/afieldfile/2013/10/25/490985_20131025152315_997_0001.jpg" class="img-circle img-responsive" alt="Placeholder image">
+  </div>
+  <div class="col-xs-2 cold-md-6">
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <img src="http://static.wixstatic.com/media/e36b23_bfe61dfdd24f4553a22df3fb4b44e31d.png" class="img-circle img-responsive" alt="Placeholder image">  
+  <img src="http://pds.joins.com/issue/imgs/201302/life20130221004236.jpg" class="img-circle img-responsive" alt="Placeholder image">  
+  <img src="https://pbs.twimg.com/profile_images/834908750/____CI-1.jpg" class="img-circle img-responsive" alt="Placeholder image">  
+  <img src="http://cyimg42.cyworld.com/common/file_down.asp?redirect=%2F420023%2F2014%2F10%2F9%2F67%2F%BE%D5%B8%E9%B7%CE%B0%ED%5F%BC%F6%C1%A4%5F%5F1%5F175601%2Ejpg" class="img-circle img-responsive" alt="Placeholder image">
+  
+	  </div>
+  </div>
+</div>
+<div id="photo" class="slide">
+  <div class="title">
+    <h1>Photo</h1>
+    <div class="col-xs-3 cold-md-3">
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-0/p206x206/16427223_464601530330781_3927825639806515902_n.jpg?oh=3c19d777b07a6b0bc326d7a3c92c0dd7&oe=594CDD53" class="img-rounded img-responsive" alt="Placeholder image"> </div>
+  <div class="col-xs-3 cold-md-3"> 
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/14292495_578236182358431_3839519124735380169_n.jpg?oh=293fe1c73c2df046997a6e7b9186b7f9&oe=595108AC" class="img-rounded img-responsive" alt="Placeholder image"> </div>
+  <div class="col-xs-3 cold-md-3"> 
+  <img src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/998141_444916038971213_889876543_n.jpg?oh=0284e0740b0d8a0c33e1c532f3a22e75&oe=5999BFEF" class="img-rounded img-responsive" alt="Placeholder image">  </div>
+  <div class="col-xs-3 cold-md-3">
+  <img src="http://cfile10.uf.tistory.com/image/214FF33753B3D8B805C577" class="img-rounded img-responsive" alt="Placeholder image"></div>  
+
+  </div>
+		</div>
+<div id="contact" class="contactslide">
+  <div class="title">
+    <h1>Contact</h1>
+        <br>경희대학교 국제캠퍼스 
+        <br>응용과학대학 / 전자정보대학
+        <br>응용화학과 / 전자공학과
+        <br>
+        <br> e-mail : dhooonk@naver.com
+        <br> phone : 010.3236.6642
+  </div>
+</div>
+
+<div id="footer-copyright" class="slide header">
+    copyright(c)2017 All rights reserved by Kim Doehoon
+    <br>
+    <br>
+    <button class="btn btn-default" href='#' role="button">맨 위로</button>
+    <br>
+</div>
+    </body>
+</html>
+
