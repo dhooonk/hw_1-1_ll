@@ -1,0 +1,9 @@
+1. nav bar에서 contact 버튼을 클릭하면 다른곳으로 가집니다 왜그럴까요ㅠㅠ
+2. 제일 아래의 '맨 위로' 버튼이 안먹혀요 왜그럴까요
+3. contact 동작이 이상해요... 딱 깔끔하게 안되고... min height, max height 등을 만져봐도 잘 안되네요 -> 
+
+transform: translateZ(-1px) scale(2);
+  z-index:-1;   
+  background-attachment: fixed;
+  이런거 어떻게 만지는 지도 모르겠고..
+  
